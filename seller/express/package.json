@@ -1,0 +1,26 @@
+{
+  "name": "toll-x402-seller-express",
+  "private": true,
+  "type": "module",
+  "description": "Sell an API for USDG on Robinhood Chain with x402, settled by Toll (express)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "start": "tsx --env-file-if-exists=../../.env server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@x402/core": "^2.30.0",
+    "@x402/evm": "^2.30.0",
+    "@x402/express": "^2.30.0",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

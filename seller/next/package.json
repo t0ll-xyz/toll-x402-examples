@@ -1,0 +1,28 @@
+{
+  "name": "toll-x402-seller-next",
+  "private": true,
+  "description": "Sell an API for USDG on Robinhood Chain with x402, settled by Toll (Next.js route handler)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "dev": "next dev -p 4021",
+    "build": "next build",
+    "start": "next start -p 4021",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@x402/core": "^2.30.0",
+    "@x402/evm": "^2.30.0",
+    "@x402/next": "^2.30.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "toll-x402-seller-hono",
+  "private": true,
+  "type": "module",
+  "description": "Sell an API for USDG on Robinhood Chain with x402, settled by Toll (hono)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "start": "tsx --env-file-if-exists=../../.env server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.6",
+    "@x402/core": "^2.30.0",
+    "@x402/evm": "^2.30.0",
+    "@x402/hono": "^2.30.0",
+    "hono": "^4.13.17"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

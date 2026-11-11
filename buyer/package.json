@@ -1,0 +1,31 @@
+{
+  "name": "toll-x402-buyer",
+  "private": true,
+  "type": "module",
+  "description": "Pay x402 APIs with USDG on Robinhood Chain, settled by Toll: exact, Permit2, upto, budgets, escrow, batch",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "exact": "tsx --env-file-if-exists=../.env pay-exact.ts",
+    "permit2": "tsx --env-file-if-exists=../.env pay-permit2.ts",
+    "upto": "tsx --env-file-if-exists=../.env pay-upto.ts",
+    "budget": "tsx --env-file-if-exists=../.env set-budget.ts",
+    "escrow": "tsx --env-file-if-exists=../.env escrow.ts",
+    "batch": "tsx --env-file-if-exists=../.env batch.ts",
+    "supported": "tsx --env-file-if-exists=../.env supported.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@x402/core": "^2.30.0",
+    "@x402/evm": "^2.30.0",
+    "@x402/fetch": "^2.30.0",
+    "viem": "^2.57.18"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
