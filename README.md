@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/toll-header.svg" width="100%" alt="sell or buy an API for USDG, settled by Toll"/></p>
+
 # Toll x402 examples
 
 Sell or buy an API for USDG on Robinhood Chain with [x402](https://x402.org). Toll's facilitator verifies and settles every payment.
